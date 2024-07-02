@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default function usePokemonList() {
   const { data, isPending } = useQuery({
-    queryKey: ['list pokemon'],
+    queryKey: ['pokemon-list'],
     queryFn: async () => {
       const pokemonListResponse = await axios.get(
         'https://pokeapi.co/api/v2/pokemon?limit=50&offset=50'
