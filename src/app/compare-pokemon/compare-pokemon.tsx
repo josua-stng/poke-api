@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import usePokemonCompare from '../query/pokemon/use-fetch-pokemon-compare';
 import LoadingSkeletonPokemonCompare from '../loading-skeleton/loading-skeleton-compare-pokemon';
+import PokemonCompareSaveButton from './compare-pokemon-save-button';
 
 type statsPokemon = {
   stat: {
@@ -54,6 +55,11 @@ export default function ComparePokemon({ pokemon_name }: propsPokemonDetail) {
             </li>
           ))}
         </ul>
+        <PokemonCompareSaveButton
+          pokemon_name={pokemon_name}
+          pokemon_image={pokemon_detail.sprites.front_default}
+          pokemon_type={pokemon_detail.types[0].type.name}
+        />
       </div>
     </main>
   );

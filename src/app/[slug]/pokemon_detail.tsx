@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ButtonCompare from '../compare-pokemon/button-compare';
+import PokemonSaveButton from './pokemon-save-button';
 
 type statsPokemon = {
   stat: {
@@ -56,9 +57,11 @@ export default function PokemonDetail({
         </ul>
         <div className="mt-4 md:flex justify-center items-center md:space-x-5 space-y-2 md:space-y-0">
           <ButtonCompare pokemon_name={pokemon_name} />
-          <button className="bg-green-700 text-white px-2 py-3 rounded-md md:ml-2 hover:bg-green-800 w-full md:w-max">
-            Save Pokemon
-          </button>
+          <PokemonSaveButton
+            pokemon_name={pokemon_name}
+            pokemon_image={pokemon_image}
+            pokemon_type={pokemon_type}
+          />
         </div>
       </div>
     </main>

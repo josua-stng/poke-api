@@ -6,6 +6,7 @@
 - There is a button to save/catch the Pokemon on the details page. If the button is clicked, the Pokemon will be added to the My Pokemon list.
 - Display the My Pokemon page which contains the Pokemon that have been saved. The saved pokemon list should not disappear when the user refreshes the page.
 - (Optional) Can compare 2 pokemon on detail page.
+- Responsive Design
 
 
 ## Getting Started

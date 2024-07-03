@@ -33,6 +33,7 @@ export default function ButtonCompare({
       urlParams.delete('compare');
       router.replace(`/${pokemon_name}`);
       setIsCompare(false);
+      setPokemonName('')
     }
   };
   return (

@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState } from 'react';
 import usePokemonList from '../query/pokemon/use-fetch-pokemon-list';
 import Paper from '@mui/material/Paper';
@@ -20,7 +19,7 @@ type Column = {
 };
 
 const columns: Column[] = [
-  { id: 'id', label: 'ID', minWidth: 50 },
+  { id: 'id', label: 'No', minWidth: 50 },
   { id: 'name', label: 'Name', minWidth: 100 },
   { id: 'details', label: 'Details', minWidth: 200 },
 ];
