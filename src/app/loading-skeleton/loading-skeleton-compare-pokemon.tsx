@@ -3,7 +3,7 @@ import 'react-loading-skeleton/dist/skeleton.css';
 
 export default function LoadingSkeletonPokemonCompare() {
   return (
-    <main className="font-mono border border-gray-400 w-[380px] mx-auto rounded-md ">
+    <main className="font-mono border border-gray-400 md:w-[380px] w-[320px] mx-auto rounded-md ">
       <div className="relative w-full h-[200px]">
         <Skeleton className="absolute w-full h-full" />
       </div>
